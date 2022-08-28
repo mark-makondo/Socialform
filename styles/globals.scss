@@ -1,0 +1,29 @@
+@use 'init' as *; 
+
+/*
+*   @title: GLOBAL FONT SIZE
+*/
+
+@include setFontSize(s); 
+
+/*
+* @title: OTHERS
+*/
+
+.secondary-font {
+    font-family: $secondary-font;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+
+    &-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-column {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'norwesterregular';
+    src: url('/fonts/norwester-webfont.woff2') format('woff2'),
+         url('/fonts/norwester-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$def-font-size: 16px;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'norwesterregular', sans-serif;
+
+$colors: (
+    'primary': black,
+    'secondary': white
+);
+
+$font-size-s: (
+    "big-head" : 2.5rem,        //40px
+    "normal-head" : 1.25rem,    //20px
+    "normal" : 1rem,            //16px
+    "small" : 0.75rem           //12px 
+);
+
+$max-width: (
+    "s": 20rem,
+    "m": 40rem,
+    "l": 50rem,
+    "xl": 95rem,
+);
+
+$little-shadow: 0px 3px 8px #00000025;

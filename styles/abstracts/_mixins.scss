@@ -1,0 +1,33 @@
+@use 'functions' as *;
+
+@mixin setFontSize($type){
+    .big-head{
+        font-size: getFontSize($type, big-head);
+    }
+    .normal-head{
+        font-size: getFontSize($type, normal-head);
+    }
+    .normal{
+        font-size: getFontSize($type, normal);
+    }
+    .small{
+        font-size: getFontSize($type, small);
+    }
+};
+
+// responsive mixin
+@mixin media-md{ // 768px
+    @media screen and (min-width: 48em){
+        @content;
+    }
+};
+@mixin media-lg{ // 1200px
+    @media screen and (min-width: 75em){
+        @content;
+    }
+};
+@mixin media-xl{ // 1900px
+    @media screen and (min-width: 118.75em){
+        @content;
+    }
+};

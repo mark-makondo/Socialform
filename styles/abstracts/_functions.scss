@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+// get colors
+@function getColors($target){
+    @return map-get($colors, $target)
+};
+
+// max width
+@function getMaxWidth($target){
+    @return map-get($max-width, $target);
+};
+
+// font size
+@function getFontSize($type, $target){ 
+    @if $type == s {    
+        @return map-get($font-size-s, $target);
+    }@else if $type == m {
+        @return map-get($font-size-m, $target);
+    }@else if $type == l {
+        @return map-get($font-size-l, $target);
+    }@else if $type == xl {
+        @return map-get($font-size-xl, $target);
+    }@else{
+        @error "Invalid type #{type}."
+    } 
+};

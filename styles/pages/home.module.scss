@@ -1,0 +1,9 @@
+.base {
+    position: relative;
+
+    &__header,
+    &__main,
+    &__footer {
+        position: relative;
+    }
+}
