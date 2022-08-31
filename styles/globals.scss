@@ -23,3 +23,28 @@
         flex-direction: column;
     }
 }
+
+
+.btn {
+    position: relative;
+
+    &-primary {
+        background: getColors(primary-dark);
+        border: none;   
+        border-radius: 5px; 
+        color: getColors(primary-white);
+        transition: 0.25s opacity ease-out;
+        opacity: 1;
+
+        &:hover {
+            color: getColors(primary-white);
+            opacity: .8;
+            transition: 0.25s opacity ease-in;
+        }
+    }
+
+    &-borderless {
+        background: transparent;
+        border: transparent;
+    }
+}

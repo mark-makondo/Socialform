@@ -7,11 +7,15 @@ import GlitchedTexts from '../components/GlitchedTexts';
 
 const Home: NextPage = () => {
     return (
-        <Layout>
+        <Layout isBase>
             <div className={homeStyle.base}>
                 <GlitchedTexts
                     fontFamily="Rubik Glitch"
-                    data={[{ label: '.TALK', color: '#0DBFF6' }, { label: '.INTERACT' }, { label: '.SOCIALIZE' }]}
+                    data={[
+                        { label: '.TALK', color: '#0DBFF6' },
+                        { label: '.CONNECT', color: '#EEEEEE' },
+                        { label: '.SOCIALIZE', color: '#EEEEEE' },
+                    ]}
                 />
             </div>
         </Layout>

@@ -1,5 +1,5 @@
 export interface CommonReusableProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export interface KeyValueType {

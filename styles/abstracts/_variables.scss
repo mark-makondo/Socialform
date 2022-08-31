@@ -47,7 +47,9 @@
 $primary-font: 'Montserrat', sans-serif;
 $special-font: 'Rubik Glitch', sans-serif;
 $def-font-size: 16px;
-$def-font-weight: 500;
+$def-font-weight: 600;
+$little-shadow: 0px 3px 8px #00000025;
+$common-padding-lr: 3rem;
 
 $colors: (
     'primary-light': #0DBFF6,
@@ -73,5 +75,3 @@ $max-width: (
     "l": 50rem,
     "xl": 95rem,
 );
-
-$little-shadow: 0px 3px 8px #00000025;

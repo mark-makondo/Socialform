@@ -1,0 +1,57 @@
+@use '../../abstracts' as *;
+
+.base {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+    input {
+        pointer-events: visible;
+        width: 100%;
+        background: transparent;
+        color: getColors(primary-white);
+    }
+
+    // override autofill styles
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: getColors(primary-white) !important;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #ffffff0a;
+        border: 1px solid #2a2a2a;
+        color: getColors(primary-white);
+        border-radius: 5px;
+        pointer-events: none;
+
+        & > div:first-child {
+            display: flex;
+            padding: 0 .5rem;
+        }
+    }
+
+    &--label-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &--label-inline-right {
+        label {
+            order: 2;
+        }
+    }
+
+    &--label-inline-left {
+        position: relative;
+    }
+}
