@@ -1,24 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @font-face {
-    font-family: 'norwesterregular';
-    src: url('/fonts/norwester-webfont.woff2') format('woff2'),
-         url('/fonts/norwester-webfont.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('/fonts/Monstserrat-Light.otf') format('otf'),
+         url('/fonts/Montserrat-LightItalic.otf') format('otf'),
+         url('/fonts/Montserrat-Medium.otf') format('otf'),
+         url('/fonts/Montserrat-MediumItalic.otf') format('otf'),
+         url('/fonts/Montserrat-Regular.otf') format('otf'),
+         url('/fonts/Montserrat-SemiBold.otf') format('otf'),
+         url('/fonts/Montserrat-SemiBoldItalic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Glitch';
+    src: url('/fonts/rubik-glitch.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 $def-font-size: 16px;
-$primary-font: 'Open Sans', sans-serif;
-$secondary-font: 'norwesterregular', sans-serif;
+$primary-font: 'Montserrat', sans-serif;
+$special-font: 'Rubik Glitch', sans-serif;
 
 $colors: (
-    'primary': black,
-    'secondary': white
+    'primary-light': #0DBFF6,
+    'primary-dark': #016685,
+    'primary-white': #EEEEEE,
+    'secondary-dark': #707070,
+    'background': #181818,
+    'background-contrast-dark':  #1C1C1C,
+    'background-contrast-light': #242424,
 );
 
 $font-size-s: (
-    "big-head" : 2.5rem,        //40px
-    "normal-head" : 1.25rem,    //20px
+    "special": 4rem,            //64ppx
+    "big-head" : 2rem,          //32px
+    "normal-head" : 1.5rem,     //24px
     "normal" : 1rem,            //16px
     "small" : 0.75rem           //12px 
 );

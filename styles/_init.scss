@@ -4,6 +4,8 @@
 :root {
     font-size: $def-font-size;
     font-family: $primary-font;
+    background: getColors(background-contrast-dark); 
+    color: getColors(secondary-dark);
 }
 
 *{

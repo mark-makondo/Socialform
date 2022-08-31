@@ -1,16 +1,19 @@
 @use 'functions' as *;
 
 @mixin setFontSize($type){
-    .big-head{
+    .special-font{  //64px
+        font-size: getFontSize($type, special);
+    }
+    .big-head-font{ //32px
         font-size: getFontSize($type, big-head);
     }
-    .normal-head{
+    .normal-head-font{  //24px
         font-size: getFontSize($type, normal-head);
     }
-    .normal{
+    .normal-font{   //16px
         font-size: getFontSize($type, normal);
     }
-    .small{
+    .small-small-font{  //12px
         font-size: getFontSize($type, small);
     }
 };
