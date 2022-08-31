@@ -2,10 +2,11 @@
 @use './abstracts/' as *; 
 
 :root {
-    font-size: $def-font-size;
-    font-family: $primary-font;
     background: getColors(background-contrast-dark); 
     color: getColors(secondary-dark);
+    font-family: $primary-font;
+    font-size: $def-font-size;
+    font-weight: $def-font-weight;
 }
 
 *{
