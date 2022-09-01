@@ -41,7 +41,9 @@ const Base: React.FC<BaseAuthProps> = ({
 
                 <div className={baseAuthStyle['auth__base__others']}>
                     <div className={baseAuthStyle['auth__base__others-box']}>
-                        <GoogleIcon />
+                        <span title="Login with google">
+                            <GoogleIcon />
+                        </span>
                     </div>
                 </div>
             </section>

@@ -38,7 +38,7 @@
 
         &:hover {
             color: getColors(primary-white);
-            opacity: .8;
+            opacity: $opaciy-hover;
             transition: 0.25s opacity ease-in;
         }
     }
