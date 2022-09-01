@@ -1,0 +1,29 @@
+.base {
+    position: relative;
+    position: relative;
+    border-radius: 50%;
+    padding: .5rem;
+    background: #71757a;
+    color: #181818;
+
+    // default
+    width: 2.5rem;
+    height: 2.5rem;
+    
+    &-wrapper {
+        position: relative;
+    }
+
+    &--small {
+        width: 2rem;
+        height: 2rem;
+    }
+    &--medium {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    &--large {
+        width: 3rem;
+        height: 3rem;
+    }
+}

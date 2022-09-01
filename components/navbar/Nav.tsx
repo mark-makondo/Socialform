@@ -1,3 +1,4 @@
+import React from 'react';
 import navbarStyle from '../../styles/components/navbar.module.scss';
 import Image from 'next/image';
 import { CommonReusableProps } from '../../types/common.type';
@@ -11,9 +12,9 @@ interface navbarProps extends CommonReusableProps {
     isBase?: boolean;
 }
 
-const Navbar: React.FC<navbarProps> = ({ background = '#181818', isBase = false }) => {
+const Navbar = React.forwardRef<HTMLDivElement, navbarProps>(({ background = '#181818', isBase = false }, ref) => {
     return (
-        <nav className={navbarStyle.base} style={{ background }}>
+        <nav ref={ref} className={navbarStyle.base} style={{ background }}>
             <div className={navbarStyle.base__logo}>
                 <Image
                     role="img"
@@ -30,6 +31,6 @@ const Navbar: React.FC<navbarProps> = ({ background = '#181818', isBase = false 
             </div>
         </nav>
     );
-};
+});
 
 export default Navbar;

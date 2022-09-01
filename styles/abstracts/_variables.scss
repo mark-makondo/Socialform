@@ -1,44 +1,39 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Monstserrat-Light.ttf') format('truetype'),
-         url('/fonts/Montserrat-Light.woff') format('woff');
+    src: url('/fonts/Monstserrat-Light.ttf') format('truetype'), url('/fonts/Montserrat-Light.woff') format('woff');
     font-weight: 300;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Monstserrat-Regular.ttf') format('truetype'),
-         url('/fonts/Montserrat-Regular.woff') format('woff');
+    src: url('/fonts/Monstserrat-Regular.ttf') format('truetype'), url('/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Monstserrat-Medium.ttf') format('truetype'),
-         url('/fonts/Montserrat-Medium.woff') format('woff');
+    src: url('/fonts/Monstserrat-Medium.ttf') format('truetype'), url('/fonts/Montserrat-Medium.woff') format('woff');
     font-weight: 500;
 }
 @font-face {
     font-family: 'Montserrat';
     src: url('/fonts/Monstserrat-SemiBold.ttf') format('truetype'),
-         url('/fonts/Montserrat-SemiBold.woff') format('woff');
+        url('/fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Monstserrat-Bold.ttf') format('truetype'),
-         url('/fonts/Montserrat-Bold.woff') format('woff');
+    src: url('/fonts/Monstserrat-Bold.ttf') format('truetype'), url('/fonts/Montserrat-Bold.woff') format('woff');
     font-weight: 700;
 }
 @font-face {
     font-family: 'Montserrat';
     src: url('/fonts/Monstserrat-ExtraBold.ttf') format('truetype'),
-         url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+        url('/fonts/Montserrat-ExtraBold.woff') format('woff');
     font-weight: 800;
 }
 
 @font-face {
     font-family: 'Rubik Glitch';
-    src: url('/fonts/RubikGlitch-Regular.ttf') format('truetype'),
-        url('/fonts/RubikGlitch-Regular.woff') format('woff'),
+    src: url('/fonts/RubikGlitch-Regular.ttf') format('truetype'), url('/fonts/RubikGlitch-Regular.woff') format('woff'),
         url('/fonts/RubikGlitch-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -50,29 +45,33 @@ $def-font-size: 16px;
 $def-font-weight: 600;
 $little-shadow: 0px 3px 8px #00000025;
 $common-padding-lr: 3rem;
-$opaciy-hover: .8;
+$opaciy-hover: 0.8;
 
 $colors: (
-    'primary-light': #0DBFF6,
+    'primary-light': #0dbff6,
     'primary-dark': #016685,
-    'primary-white': #EEEEEE,
+    'primary-white': #eeeeee,
     'secondary-dark': #707070,
     'background': #181818,
-    'background-contrast-dark':  #1C1C1C,
+    'background-contrast-dark': #1c1c1c,
     'background-contrast-light': #242424,
 );
 
 $font-size-s: (
-    "special": 4rem,            //64ppx
-    "big-head" : 2rem,          //32px
-    "normal-head" : 1.5rem,     //24px
-    "normal" : 1rem,            //16px
-    "small" : 0.75rem           //12px 
+    'special': 4rem,
+    //64ppx
+    'big-head': 2rem,
+    //32px
+    'normal-head': 1.5rem,
+    //24px
+    'normal': 1rem,
+    //16px
+    'small': 0.75rem //12px ,
 );
 
 $max-width: (
-    "s": 20rem,
-    "m": 40rem,
-    "l": 50rem,
-    "xl": 95rem,
+    's': 20rem,
+    'm': 40rem,
+    'l': 50rem,
+    'xl': 95rem,
 );

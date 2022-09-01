@@ -1,10 +1,7 @@
+import React from 'react';
 import Head from 'next/head';
 import layoutStyle from '../styles/components/layout.module.scss';
 import { CommonReusableProps } from '../types/common.type';
-import Image from 'next/image';
-
-// assets
-// import background from '../public/images/others/artistric-abstract.png';
 
 // components
 import Nav from './navbar/Nav';
