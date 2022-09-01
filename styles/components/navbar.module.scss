@@ -27,4 +27,11 @@
         justify-content: space-between;        
         position: relative;
     }
+
+    &__menu {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }
