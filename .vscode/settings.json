@@ -8,5 +8,17 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[typescript]": {
+        // override if setted per-language
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        // override if setted per-language
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        // override if setted per-language
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
     
 }

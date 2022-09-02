@@ -1,14 +1,20 @@
-import navbarStyle from '../styles/components/navbar.module.scss';
+import React from 'react';
+import navbarStyle from '../../styles/components/navbar.module.scss';
 import Image from 'next/image';
-import { CommonReusableProps } from '../types/common.type';
+import { CommonReusableProps } from '../../types/common.type';
+
+// components
+import DefaultNav from './DefaultNav';
+import UserNav from './UserNav';
 
 interface navbarProps extends CommonReusableProps {
     background?: string;
+    isBase?: boolean;
 }
 
-const Navbar: React.FC<navbarProps> = ({ children, background = '' }) => {
+const Navbar = React.forwardRef<HTMLDivElement, navbarProps>(({ background = '#181818', isBase = false }, ref) => {
     return (
-        <nav className={navbarStyle.base} style={{ background }}>
+        <nav ref={ref} className={navbarStyle.base} style={{ background }}>
             <div className={navbarStyle.base__logo}>
                 <Image
                     role="img"
@@ -21,10 +27,10 @@ const Navbar: React.FC<navbarProps> = ({ children, background = '' }) => {
                 />
             </div>
             <div className={navbarStyle.base__content} role="navigation">
-                {children}
+                {isBase ? <DefaultNav /> : <UserNav />}
             </div>
         </nav>
     );
-};
+});
 
 export default Navbar;

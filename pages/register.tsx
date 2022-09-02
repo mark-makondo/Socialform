@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import homeStyle from '../styles/pages/home.module.scss';
+import { LANDING_PAGE_GLITCH_TEXT_DATA } from '../constants/constants';
 
 // components
 import Layout from '../components/Layout';
@@ -11,12 +12,8 @@ const Register: NextPage = () => {
         <Layout isBase>
             <div className={homeStyle.base}>
                 <GlitchedTexts
-                    fontFamily="Rubik Glitch"
-                    data={[
-                        { label: '.TALK', color: '#0DBFF6' },
-                        { label: '.CONNECT', color: '#EEEEEE' },
-                        { label: '.SOCIALIZE', color: '#EEEEEE' },
-                    ]}
+                    fontFamily={LANDING_PAGE_GLITCH_TEXT_DATA.fontFamily}
+                    data={LANDING_PAGE_GLITCH_TEXT_DATA.data}
                 />
                 <SignUp />
             </div>

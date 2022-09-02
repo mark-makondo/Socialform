@@ -1,3 +1,5 @@
+import { NextRouter } from 'next/router';
+
 export default interface ContextProps {
-    data: string
+    router: NextRouter;
 }
