@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import navbarStyle from '../../styles/components/navbar.module.scss';
 
 // assets

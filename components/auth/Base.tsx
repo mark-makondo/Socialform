@@ -11,6 +11,7 @@ interface BaseAuthProps extends CommonReusableProps {
     footerNode: React.ReactNode;
     btnFormText?: string;
     onSubmit?: (e: React.FormEvent) => void;
+    onGoogleLogin?: () => void;
 }
 
 const Base: React.FC<BaseAuthProps> = ({
@@ -20,6 +21,7 @@ const Base: React.FC<BaseAuthProps> = ({
     footerNode,
     btnFormText = '',
     onSubmit,
+    onGoogleLogin,
 }) => {
     return (
         <div className={baseAuthStyle.auth__base}>
@@ -40,7 +42,10 @@ const Base: React.FC<BaseAuthProps> = ({
                 <LineText>Or continue with</LineText>
 
                 <div className={baseAuthStyle['auth__base__others']}>
-                    <div className={baseAuthStyle['auth__base__others-box']}>
+                    <div
+                        className={baseAuthStyle['auth__base__others-box']}
+                        onClick={() => onGoogleLogin && onGoogleLogin()}
+                    >
                         <span title="Login with google">
                             <GoogleIcon />
                         </span>

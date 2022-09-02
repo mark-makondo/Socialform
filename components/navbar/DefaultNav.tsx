@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import navbarStyle from '../../styles/components/navbar.module.scss';
+import Context from '../../context/Context';
 
 const DefaultNav = () => {
-    const currentPath = useRouter().pathname;
+    const ctx = useContext(Context);
+
+    const currentPath = ctx.router.pathname;
 
     const isPathLogin = currentPath === '/login';
     const isPathRegister = currentPath === '/register';

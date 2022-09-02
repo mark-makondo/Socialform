@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import layoutStyle from '../styles/components/layout.module.scss';
 import { CommonReusableProps } from '../types/common.type';

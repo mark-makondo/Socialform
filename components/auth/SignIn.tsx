@@ -1,3 +1,4 @@
+import { signIn } from 'next-auth/react';
 import baseAuthStyle from '../../styles/components/auth/base.module.scss';
 import Link from 'next/link';
 
@@ -8,10 +9,6 @@ import MailIcon from '../../public/images/svg/envelope-fill.svg';
 import KeyIcon from '../../public/images/svg/key-fill.svg';
 
 const SignIn = () => {
-    const handleOnSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-    };
-
     const renderFooter = () => (
         <>
             <p>
@@ -37,7 +34,8 @@ const SignIn = () => {
                 description="Connect with your friends by signing in."
                 btnFormText="Sign In"
                 footerNode={renderFooter()}
-                onSubmit={handleOnSubmit}
+                onSubmit={(e) => e.preventDefault()}
+                onGoogleLogin={() => signIn('google', { callbackUrl: '/user' })}
             >
                 <SpecialInput
                     SVG={<MailIcon />}
